@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advice Generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="advice-container">
+
+    
+    <h4 id="advice-title">ADVICE #<span id="advice-id">123</span></h4>
+    <div class="text_content">
+
+      <p id="advice-text">"This is where the advice will display!"</p>
+    </div>
+    <picture>
+      <source srcset="./images/pattern-divider-desktop.svg" media="(min-width: 1440px)">
+      <source srcset="./images/pattern-divider-mobile.svg" media="(max-width: 375px)">
+      <img src="./images/pattern-divider-mobile.svg" class="image1" alt="Pattern Divider">
+  </picture>
+  
+    <div class="button_container">
+
+      <div class="circle">
+
+        <button id="generate-advice" onclick="getAdvice()">
+          <img src="./images/icon-dice.svg" alt="Generate Advice" class="dice_img">
+        </button>
+        
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

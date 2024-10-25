@@ -1,0 +1,87 @@
+
+
+body {
+    font-family: 'Manrope';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-color: hsl(218, 23%, 16%);
+}
+.advice-container {
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 20px;
+    border-radius: 10px;
+    
+    height: 270px;
+    width: 500px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, 0.215);    
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    
+    
+    margin-top: 30px;
+}
+button:hover img {
+    transform: scale(1.1);
+}
+.circle{
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.circle:hover {
+        box-shadow: 0 0 13px hsl(150, 100%, 66%), 0 0 25px hsl(150, 100%, 66%);
+    }
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+.dice_img{
+    height: 22px;
+    width: 22px;
+    margin-top:2px;
+}
+
+p{
+    color: hsl(193, 38%, 86%);
+    font-size: 28px; 
+    font-weight: 800px;
+   
+}
+h4{
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.text_content{
+    
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    
+    .advice-container{
+        
+        margin:0 auto;
+       
+        width: 370px;
+    }
+    .image1{
+        background-image: url("./images/pattern-divider-mobile.svg");
+    }
+  }
